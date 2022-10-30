@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  MovieAppCoreData
-//
-//  Created by berkay on 27.10.22.
-//
+
 
 import UIKit
 import CoreData

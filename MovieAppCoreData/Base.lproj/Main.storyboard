@@ -48,13 +48,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="067-9x-AsS">
-                                <rect key="frame" x="16" y="132" width="358" height="185"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="358" id="91d-vx-FNy"/>
-                                    <constraint firstAttribute="height" constant="185" id="Dt0-7t-1Jz"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCz-cR-pbr">
                                 <rect key="frame" x="65" y="350" width="260" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -81,11 +74,18 @@
                                     <action selector="Save:" destination="TJ2-uO-5yM" eventType="touchUpInside" id="m6U-9P-GCP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImage" translatesAutoresizingMaskIntoConstraints="NO" id="067-9x-AsS">
+                                <rect key="frame" x="16" y="126" width="358" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="91d-vx-FNy"/>
+                                    <constraint firstAttribute="height" constant="185" id="Dt0-7t-1Jz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CbH-Yv-Cqb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="067-9x-AsS" firstAttribute="top" secondItem="CbH-Yv-Cqb" secondAttribute="top" constant="41" id="3AZ-ip-t7u"/>
+                            <constraint firstItem="067-9x-AsS" firstAttribute="top" secondItem="CbH-Yv-Cqb" secondAttribute="top" constant="35" id="3AZ-ip-t7u"/>
                             <constraint firstItem="gJg-DD-CEy" firstAttribute="leading" secondItem="CbH-Yv-Cqb" secondAttribute="leading" constant="134" id="B3m-eP-0Zy"/>
                             <constraint firstItem="Prp-7K-uYh" firstAttribute="centerY" secondItem="wdz-5b-0HK" secondAttribute="centerY" id="B3u-BX-Tkt"/>
                             <constraint firstItem="fCz-cR-pbr" firstAttribute="trailing" secondItem="Prp-7K-uYh" secondAttribute="trailing" id="B44-57-qD9"/>
@@ -100,7 +100,7 @@
                             <constraint firstItem="Prp-7K-uYh" firstAttribute="trailing" secondItem="l45-RY-L1I" secondAttribute="trailing" id="i0h-xd-NOd"/>
                             <constraint firstItem="fCz-cR-pbr" firstAttribute="leading" secondItem="CbH-Yv-Cqb" secondAttribute="leading" constant="65" id="sYp-kG-fhz"/>
                             <constraint firstItem="fCz-cR-pbr" firstAttribute="leading" secondItem="Prp-7K-uYh" secondAttribute="leading" id="v18-hE-hZL"/>
-                            <constraint firstItem="fCz-cR-pbr" firstAttribute="top" secondItem="067-9x-AsS" secondAttribute="bottom" constant="33" id="woF-jj-Wdw"/>
+                            <constraint firstItem="fCz-cR-pbr" firstAttribute="top" secondItem="067-9x-AsS" secondAttribute="bottom" constant="39" id="woF-jj-Wdw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eIh-3s-Hpy"/>
@@ -135,6 +135,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="selectImage" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

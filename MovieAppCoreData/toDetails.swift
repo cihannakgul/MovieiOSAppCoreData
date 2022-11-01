@@ -10,6 +10,7 @@ class toDetails: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     @IBOutlet weak var txtYear: UITextField!
     
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var txtDirector: UITextField!
     
     var didImageSelected = false
@@ -38,6 +39,7 @@ class toDetails: UIViewController, UIImagePickerControllerDelegate, UINavigation
         if chosenMovie != ""{
             
             
+            saveButton.isHidden = true
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Movies")
@@ -78,6 +80,10 @@ class toDetails: UIViewController, UIImagePickerControllerDelegate, UINavigation
             
             
         }
+        else{
+            saveButton.isHidden = false
+            saveButton.isEnabled = false
+        }
     }
     
     @objc func SelectImage(){
@@ -89,6 +95,7 @@ class toDetails: UIViewController, UIImagePickerControllerDelegate, UINavigation
             picker.allowsEditing = true
             present(picker, animated:true, completion: nil)
             didImageSelected = true
+            saveButton.isEnabled = true
         }
     }
     
